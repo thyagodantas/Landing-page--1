@@ -1,3 +1,9 @@
+/*Logos*/
+/****/
+/*Colors*/
+/*****/
+/*Responsive*/
+/****/
 * {
   margin: 0;
   padding: 0;
@@ -23,19 +29,39 @@ body {
 /******/
 header {
   background-color: #d6d6d6;
-  padding: 10px 0;
+  padding: 10px 2%;
 }
 
 .logo-1 {
   float: left;
-  width: 100px;
-  height: 70px;
-  background-color: purple;
+  width: 160px;
+  height: 60px;
+  /*background-color: purple;*/
+  background-image: url("../imagens/logo1.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .logo-2 {
   float: right;
-  width: 100px;
-  height: 70px;
-  background-color: green;
+  width: 160px;
+  height: 60px;
+  /*background-color: green;*/
+  background-image: url("../imagens/logo2.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 510px) {
+  .logo-1,
+  .logo-2 {
+    margin-top: 10px;
+    display: inline-block;
+    float: none;
+  }
+  header {
+    text-align: center;
+  }
 }

@@ -1,6 +1,7 @@
-/*Logos*/
+/*Logos and bg*/
 $logo-1: "../imagens/logo1.png";
 $logo-2: "../imagens/logo2.png";
+$bg-form: "../imagens/bg-form.jpg";
 /****/
 
 /*Colors*/
@@ -62,8 +63,7 @@ header {
 }
 
 @media screen and (max-width: $max-width) {
-  .logo-1,
-  .logo-2 {
+  [class^="logo"] {
     margin-top: 10px;
     display: inline-block;
     float: none;

@@ -74,7 +74,7 @@ section.cover-form {
   right: 30px;
   top: -2.5%;
   width: 400px;
-  height: 105%;
+  height: 108%;
   box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -110,6 +110,9 @@ section.cover-form {
   cursor: pointer;
   border: 0;
 }
+.form-container form input[type=submit]:hover {
+  background-color: #04455c;
+}
 
 .form-wraper:not(:first-child) {
   margin-top: 40px;
@@ -138,7 +141,78 @@ section.section-call p {
 }
 section.section-call .container {
   background-color: rgb(233, 233, 233);
-  padding: 35px 0 35px 0;
+  padding: 60px 0 35px 0;
+}
+
+.flex-mosaic {
+  display: flex;
+}
+
+.item-1-mosaic {
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 55%;
+}
+
+.item-2-mosaic {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgb(233, 233, 233);
+  font-size: 24px;
+  padding: 80px 40px;
+  width: 45%;
+}
+.item-2-mosaic strong {
+  font-size: 15px;
+}
+
+section.pre-footer {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+}
+section.pre-footer .container {
+  background-color: rgb(233, 233, 233);
+  padding: 60px 0 35px 0;
+}
+section.pre-footer h2 {
+  font-size: 16.5px;
+}
+section.pre-footer p {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 590;
+  padding: 0 20px;
+  margin-top: 2.5%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  margin-top: 8px;
+}
+footer p#copyright {
+  font-size: 20px;
+}
+footer p#developer {
+  font-weight: 600;
+}
+footer p a {
+  box-shadow: inset 0 0 0 0 #7600c5;
+  color: #7600c5;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+footer p a:hover {
+  box-shadow: inset 150px 0 0 0 #7600c5;
+  color: white;
 }
 
 @media screen and (max-width: 960px) {
@@ -155,15 +229,21 @@ section.section-call .container {
     display: inline-block;
   }
 }
-.flex-mosaic {
-  display: flex;
+@media screen and (max-width: 768px) {
+  .flex-mosaic {
+    display: block;
+  }
+  .item-1-mosaic {
+    height: 225px;
+    width: 100%;
+  }
+  .item-2-mosaic {
+    font-size: 25px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
 }
-
-.item-1-mosaic {
-  background-position: center;
-  background-size: cover;
-}
-
 @media screen and (max-width: 510px) {
   [class^=logo] {
     margin-top: 10px;

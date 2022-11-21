@@ -10,7 +10,9 @@ $section-call-container: rgba(233, 233, 233);
 /*****/
 
 /*Responsive*/
-$max-width: 510px;
+$max-width-1: 510px;
+$middle: 960px;
+$tablet: 768px;
 /****/
 
 /*Font-family*/
@@ -85,7 +87,7 @@ section.cover-form {
   right: 30px;
   top: -2.5%;
   width: 400px;
-  height: 105%;
+  height: 108%;
   box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
   background-color: rgba(255, 255, 255, 0.8);
 
@@ -125,6 +127,10 @@ section.cover-form {
     cursor: pointer;
     border: 0;
   }
+
+  & form input[type="submit"]:hover {
+    background-color: #04455c;
+  }
 }
 
 .form-wraper:not(:first-child) {
@@ -157,11 +163,91 @@ section.section-call {
 
   & .container {
     background-color: $section-call-container;
-    padding: 35px 0 35px 0;
+    padding: 60px 0 35px 0;
   }
 }
 
-@media screen and (max-width: 960px) {
+.flex-mosaic {
+  display: flex;
+}
+
+.item-1-mosaic {
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 55%;
+}
+
+.item-2-mosaic {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: $section-call-container;
+  font-size: 24px;
+  padding: 80px 40px;
+  width: 45%;
+
+  & strong {
+    font-size: 15px;
+  }
+}
+
+section.pre-footer {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+
+  & .container {
+    background-color: $section-call-container;
+    padding: 60px 0 35px 0;
+  }
+
+  & h2 {
+    font-size: 16.5px;
+  }
+
+  & p {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 590;
+    padding: 0 20px;
+    margin-top: 2.5%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+
+  & p {
+    margin-top: 8px;
+  }
+
+  & p#copyright {
+    font-size: 20px;
+  }
+
+  & p#developer {
+    font-weight: 600;
+  }
+
+  & p a {
+    box-shadow: inset 0 0 0 0 #7600c5;
+    color: #7600c5;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  & p a:hover {
+    box-shadow: inset 150px 0 0 0 #7600c5;
+    color: white;
+  }
+}
+
+@media screen and (max-width: $middle) {
   .bg {
     height: auto;
     padding: 40px 0;
@@ -177,16 +263,25 @@ section.section-call {
   }
 }
 
-.flex-mosaic {
-  display: flex;
+@media screen and (max-width: $tablet) {
+  .flex-mosaic {
+    display: block;
+  }
+
+  .item-1-mosaic {
+    height: 225px;
+    width: 100%;
+  }
+
+  .item-2-mosaic {
+    font-size: 25px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
 }
 
-.item-1-mosaic {
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (max-width: $max-width) {
+@media screen and (max-width: $max-width-1) {
   [class^="logo"] {
     margin-top: 10px;
     display: inline-block;

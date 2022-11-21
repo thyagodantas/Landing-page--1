@@ -155,6 +155,15 @@ section.section-call .container {
     display: inline-block;
   }
 }
+.flex-mosaic {
+  display: flex;
+}
+
+.item-1-mosaic {
+  background-position: center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 510px) {
   [class^=logo] {
     margin-top: 10px;

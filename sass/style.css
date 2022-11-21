@@ -4,10 +4,13 @@
 /*****/
 /*Responsive*/
 /****/
+/*Font-family*/
+/****/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html,
@@ -29,7 +32,7 @@ body {
 /******/
 header {
   background-color: #d6d6d6;
-  padding: 10px 2% 30px 2%;
+  padding: 10px 2% 40px 2%;
 }
 
 .logo-1 {

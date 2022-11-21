@@ -12,6 +12,6 @@ Release 1.0:
 
 I adjusted some elements to make the site even more responsive and remove bugs in the layout and created a simple footer that will be changed in the future.
 
-Preview:
+Preview: https://thyagodantas.github.io/Landing-page--1/s
 </strong></div>
 <div><img src="https://i.imgur.com/4jikchP.png" /></div>

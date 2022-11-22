@@ -204,13 +204,13 @@ section.pre-footer {
   }
 
   & h2 {
-    font-size: 16.5px;
+    font-size: 20px;
   }
 
   & p {
     text-decoration: underline;
     font-style: italic;
-    font-size: 16px;
+    font-size: 17.5px;
     font-weight: 590;
     padding: 0 20px;
     margin-top: 2.5%;
@@ -236,7 +236,7 @@ footer {
   & p a {
     box-shadow: inset 0 0 0 0 #7600c5;
     color: #7600c5;
-    margin: 0 -0.25rem;
+    margin: 0 -0.1rem;
     padding: 0 0.25rem;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
@@ -244,6 +244,13 @@ footer {
   & p a:hover {
     box-shadow: inset 150px 0 0 0 #7600c5;
     color: white;
+  }
+
+  & img {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
   }
 }
 

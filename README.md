@@ -12,6 +12,10 @@ Release 1.0:
 
 I adjusted some elements to make the site even more responsive and remove bugs in the layout and created a simple footer that will be changed in the future.
 
+Release 1.1:
+
+Added the logo of my web development company in the footer and added a basic JS function that changes the developer's name in the footer when hovering the mouse over it.
+
 Preview: https://thyagodantas.github.io/Landing-page--1/
 </strong></div>
 <div><img src="https://i.imgur.com/4jikchP.png" /></div>
